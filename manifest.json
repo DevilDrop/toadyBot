@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "ToadyBot",
+  "description": "Your toady friend",
+  "version": "1.0",
+  "options_page": "options.html",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://ajax.googleapis.com/"
+  ]
+}
