@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head><title>ToadyBot Options</title></head>
+<head>
+    <meta charset="utf-8">
+    <title>ToadyBot Options</title>
+    <link rel="stylesheet" href="css/options.css" type="text/css">
+</head>
 <body>
+    <div class="wrapper">
+        <img src="images/icon.png" width="50" height="50" />
+        <div class="title">ToadyBot</div>
 
-Favorite color:
-<select id="color">
- <option value="red">red</option>
- <option value="green">green</option>
- <option value="blue">blue</option>
- <option value="yellow">yellow</option>
-</select>
+        <div class="content">            
+            Favorite color:
+            <select id="color">
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="yellow">yellow</option>
+            </select>
 
-<label>
-  <input type="checkbox" id="like">
-  I like colors.
-</label>
+            <label>
+                <input type="checkbox" id="like">
+                I like colors.
+            </label>
 
-<div id="status"></div>
-<button id="save">Save</button>
+            <div id="status"></div>
+            <button id="save">Save</button>
+        </div>
+    </div>
+
 
 <script src="options.js"></script>
 </body>

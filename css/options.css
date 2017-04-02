@@ -1,0 +1,16 @@
+﻿.wrapper {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.wrapper .title {
+    font-size: 26px;
+}
+
+.wrapper .content {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid silver;
+}

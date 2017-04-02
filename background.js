@@ -1,11 +1,27 @@
 var msg = new SpeechSynthesisUtterance();
 var voices = window.speechSynthesis.getVoices();
-msg.voice = voices[10]; // Note: some voices don't support altering params
+msg.voice = voices[10];
 // msg.voiceURI = 'native';
-// msg.volume = 1; // 0 to 1
-// msg.text = 'Девченки, как дела?';
-// msg.lang = 'ru-RU';
-msg.text = 'Hey biches, whats up?';
-msg.lang = 'en-US';
+msg.volume = 1; // 0 to 1
+msg.lang = 'ru-RU';
 
-speechSynthesis.speak(msg);
+var texts = getTextArr();
+
+setTimeout(function () {
+    speak(texts.Support[0]);
+}, 5000);
+
+function speak(text) {
+    msg.text = text;
+    speechSynthesis.speak(msg);
+}
+
+// Get texts from json
+function getTextArr() {
+    //TODO: pull texts from json
+
+    return {
+        Support: ["Красавчик", "Так держать", "Хочешь я дам тебе миллион долларов?"],
+        Progress: ["Хватит в игры играть", "Иди работай"]
+    };
+}
